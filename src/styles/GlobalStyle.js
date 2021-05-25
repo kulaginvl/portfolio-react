@@ -21,10 +21,17 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     font-size: 1.2rem;
     text-decoration: none;
+    font-family: 'Nunito', sans-serif;
 
 
     body{
         background-color: var(--background-dark-color);
+        color: var(--font-light-color);
+    }
+    a{
+        font-family:inherit;
+        color:inherit;
+        font-size:inherit;
     }
 }
 `;
