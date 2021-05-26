@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import avatar from '../assets/img/avatar.jpg';
 
-export const Navigation = () => {
+const Navigation = () => {
   return (
     <NavigationStyled>
       <div className="avatar">
@@ -47,6 +47,7 @@ export const Navigation = () => {
     </NavigationStyled>
   );
 };
+export default Navigation;
 
 const NavigationStyled = styled.nav`
   display: flex;
