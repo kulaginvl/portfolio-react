@@ -1,15 +1,15 @@
 import React from 'react';
-import Particles from 'react-particles-js';
 import styled from 'styled-components';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import GithubIcon from '@material-ui/icons/GitHub';
 import YoutubeIcon from '@material-ui/icons/YouTube';
+import Particle from '../components/Particle';
 
 const HomePage = () => {
   return (
     <HomePageStyled>
-      <div className="p-particles-js">
-        <Particles />
+      <div className="particle-con">
+        <Particle />
       </div>
       <div className="typography">
         <h1>
@@ -40,7 +40,7 @@ const HomePageStyled = styled.header`
   width: 100%;
   height: 100vh;
   position: relative;
-  .p-particles-js {
+  .particles-con {
     position: absolute;
     left: 0;
     top: 0;
@@ -62,7 +62,7 @@ const HomePageStyled = styled.header`
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
+        border-radius: 60%;
         transition: all 0.4s ease-in-out;
         cursor: pointer;
         &:hover {
@@ -73,7 +73,19 @@ const HomePageStyled = styled.header`
           margin-right: 1rem;
         }
         svg {
-          margin: 0.5 rem;
+          margin: 0.4rem;
+        }
+      }
+      .i-youtube {
+        &:hover {
+          border: 2px solid red;
+          color: red;
+        }
+      }
+      .i-github {
+        &:hover {
+          border: 2px solid #542c54;
+          color: #542c54;
         }
       }
     }

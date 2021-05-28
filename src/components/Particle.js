@@ -2,7 +2,7 @@ import Particles from 'react-particles-js';
 
 import React from 'react';
 
-const Particles = () => {
+const Particle = () => {
   return (
     <>
       <Particles
@@ -68,4 +68,4 @@ const Particles = () => {
   );
 };
 
-export default Particles;
+export default Particle;
