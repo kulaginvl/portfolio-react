@@ -33,7 +33,7 @@ const Particle = () => {
               width: 1,
               shadow: {
                 enable: true,
-                color: 'e74c3c',
+                color: '#e74c3c',
                 blur: 5,
               },
             },

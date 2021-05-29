@@ -40,11 +40,6 @@ const HomePageStyled = styled.header`
   width: 100%;
   height: 100vh;
   position: relative;
-  .particles-con {
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
   .typography {
     position: absolute;
     top: 50%;
