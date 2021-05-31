@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import sectionImg from '../assets/img/img-section.jpg';
+import Button from './Button';
 
 const ImageSection = () => {
   return (
@@ -31,6 +32,7 @@ const ImageSection = () => {
             <p>: Russia</p>
           </div>
         </div>
+        <Button title={'Download'} />
       </div>
     </ImageSectionStyled>
   );
@@ -59,6 +61,8 @@ const ImageSectionStyled = styled.div`
     }
     .a-inf {
       display: flex;
+      padding-bottom: 1rem;
+
       .inf-title {
         padding-right: 2rem;
         p {

@@ -99,7 +99,7 @@ const NavigationStyled = styled.nav`
           width: 0;
           height: 50%;
           background-color: var(--primary-color);
-          transition: All 0.5s cubic-bezier(1, -0.19, 0.25, 0.96);
+          transition: all 0.5s cubic-bezier(1, -0.19, 0.25, 0.96);
           z-index: 3;
           opacity: 0.21;
         }
