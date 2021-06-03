@@ -13,6 +13,41 @@ const ServicesCard = ({ image, title, paragraph }) => {
   );
 };
 
-const ServicesCardStyled = styled.div``;
+const ServicesCardStyled = styled.div`
+  background-color: var(--background-dark-color-2);
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-top: 7px solid var(--border-color);
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    border-top: 7px solid var(--primary-color);
+    cursor: pointer;
+    transform: translateY(2px);
+  }
+  .container {
+    padding: 1.2rem;
+    h4 {
+      color: var(--white-color);
+      font-size: 1.5rem;
+      padding: 1rem 0;
+      position: relative;
+      padding-bottom: 1rem;
+      &::after {
+        content: '';
+        width: 4rem;
+        background-color: var(--border-color);
+        height: 0.19rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-radius: 10px;
+      }
+    }
+    p {
+      padding: 0.8rem 0;
+    }
+  }
+`;
 
 export default ServicesCard;

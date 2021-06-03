@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { InnerLayout } from '../styles/Layouts';
 import ServicesCard from './ServicesCard';
 import Title from './Title';
+import heart from '../assets/img/heart.png';
 
 const ServicesSection = () => {
   return (
@@ -11,17 +12,19 @@ const ServicesSection = () => {
         <Title title={'Services'} span={'services'} />
         <div className="services">
           <ServicesCard
-            image={null}
+            image={heart}
             title={'Web'}
             paragraph={'Non mollit in ea mollit nulla voluptate ad cillum est sit.'}
           />
+          <div className="mid-card">
+            <ServicesCard
+              image={heart}
+              title={'Art'}
+              paragraph={'Non mollit in ea mollit nulla voluptate ad cillum est sit.'}
+            />
+          </div>
           <ServicesCard
-            image={null}
-            title={'Art'}
-            paragraph={'Non mollit in ea mollit nulla voluptate ad cillum est sit.'}
-          />
-          <ServicesCard
-            image={null}
+            image={heart}
             title={'Dev'}
             paragraph={'Non mollit in ea mollit nulla voluptate ad cillum est sit.'}
           />
@@ -31,6 +34,15 @@ const ServicesSection = () => {
   );
 };
 
-const ServicesSectionStyled = styled.section``;
+const ServicesSectionStyled = styled.section`
+  .services {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mid-card {
+    margin: 0 1rem;
+  }
+`;
 
 export default ServicesSection;

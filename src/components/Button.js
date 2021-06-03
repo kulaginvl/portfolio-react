@@ -14,16 +14,20 @@ const ButtonStyled = styled.a`
   font-size: inherit;
   text-transform: uppercase;
   position: relative;
-
-  &:hover::after {
+  &::after {
     content: '';
     position: absolute;
-    width: 100%;
+    transition: all 0.4s ease-in-out;
+    width: 0;
     height: 0.2rem;
-    background-color: var(--white-color);
     left: 0;
     bottom: 0;
-    transition: all 0.4s ease-in-out;
+    opacity: 0.8;
+  }
+
+  &:hover::after {
+    width: 100%;
+    background-color: var(--white-color);
   }
 `;
 export default Button;
