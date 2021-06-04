@@ -43,7 +43,7 @@ const ImageSectionStyled = styled.div`
   display: flex;
 
   .left-content {
-    width: 150%;
+    width: 100%;
     img {
       width: 90%;
       object-fit: cover;

@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { InnerLayout } from '../styles/Layouts';
 import ServicesCard from './ServicesCard';
-import Title from './Title';
+import TitleBlock from './TitleBlock';
 import heart from '../assets/img/heart.png';
 
 const ServicesSection = () => {
   return (
     <InnerLayout>
       <ServicesSectionStyled>
-        <Title title={'Services'} span={'services'} />
+        <TitleBlock title={'Services'} span={'services'} />
         <div className="services">
           <ServicesCard
             image={heart}

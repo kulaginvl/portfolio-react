@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Title = ({ title, span }) => {
+const TitleBlock = ({ title, span }) => {
   return (
     <TitleStyled>
       <h2>
@@ -51,4 +51,4 @@ const TitleStyled = styled.div`
   }
 `;
 
-export default Title;
+export default TitleBlock;
