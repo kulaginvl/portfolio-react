@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { InnerLayout } from '../styles/Layouts';
+import { InnerLayout } from '../../styles/Layouts';
 import ReviewItem from './ReviewItem';
 import TitleBlock from './TitleBlock';
 

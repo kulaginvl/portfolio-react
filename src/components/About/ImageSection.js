@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import sectionImg from '../assets/img/img-section.jpg';
-import Button from './Button';
+import sectionImg from '../../assets/img/img-section.jpg';
+import Button from '../Button';
 
 const ImageSection = () => {
   return (
