@@ -21,13 +21,13 @@ const HomePage = () => {
           pariatur.Deserunt anim nisi cupidatat velit enim fugiat et labore elit nisi eiusmod.
         </p>
         <div className="icons">
-          <a href="#" className="icon i-github">
+          <a href="/" className="icon i-github">
             <GithubIcon />
           </a>
-          <a href="#" className="icon i-telegram">
+          <a href="/" className="icon i-telegram">
             <TelegramIcon />
           </a>
-          <a href="#" className="icon i-youtube">
+          <a href="/" className="icon i-youtube">
             <YoutubeIcon />
           </a>
         </div>

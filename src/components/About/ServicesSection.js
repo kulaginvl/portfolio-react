@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { InnerLayout } from '../../styles/Layouts';
 import ServicesCard from './ServicesCard';
-import TitleBlock from './TitleBlock';
+import TitleBlock from '../TitleBlock';
 import heart from '../../assets/img/heart.png';
 
 const ServicesSection = () => {
