@@ -2,14 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 import { MainLayout, InnerLayout } from '../styles/Layouts';
 import TitleBlock from '../components/TitleBlock';
+import Button from '../components/Button';
+import ContactItem from '../components/Contact/ContactItem';
+import PhoneIcon from '@material-ui/icons/Phone';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const ContactPage = () => {
+  const phoneico = <PhoneIcon />;
+  const mailico = <MailOutlineIcon />;
+  const locationico = <LocationOnIcon />;
   return (
     <MainLayout>
       <TitleBlock title={'Contact'} span={'Contact'} />
       <ContactPageStyled>
         <InnerLayout className="contact-section">
           <div className="left-content">
+            <div className="contact-title">
+              <h4>Contact Title</h4>
+            </div>
             <form className="form">
               <div className="form-field">
                 <label htmlFor="name" id="name">
@@ -29,13 +40,35 @@ const ContactPage = () => {
                 </label>
                 <input type="text" id="subject" />
               </div>
-              <div className="text-area">
+              <div className="form-field">
                 <label htmlFor="">Enter your Message</label>
                 <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
               </div>
+              <div className="form-field">
+                <Button title={'Send Email'} />
+              </div>
             </form>
           </div>
-          <div className="right-content"></div>
+          <div className="right-content">
+            <ContactItem
+              icon={phoneico}
+              title={'Phone'}
+              contact1={'+1123456789'}
+              contact2={'2-123-456-78-91'}
+            />
+            <ContactItem
+              icon={mailico}
+              title={'Mail'}
+              contact1={'+1123456789'}
+              contact2={'2-123-456-78-91'}
+            />
+            <ContactItem
+              icon={locationico}
+              title={'Location'}
+              contact1={'+1123456789'}
+              contact2={'2-123-456-78-91'}
+            />
+          </div>
         </InnerLayout>
       </ContactPageStyled>
     </MainLayout>
@@ -46,6 +79,13 @@ const ContactPageStyled = styled.section`
   .contact-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    .contact-title {
+      h4 {
+        color: var(--white-color);
+        padding: 1rem 0;
+        font-size: 1.7rem;
+      }
+    }
     .form {
       width: 100%;
 
@@ -70,6 +110,14 @@ const ContactPageStyled = styled.section`
           padding: 0 0.94rem;
           width: 100%;
           color: inherit;
+        }
+        textarea {
+          background-color: transparent;
+          border: 1px solid var(--border-color);
+          outline: none;
+          color: inherit;
+          width: 100%;
+          padding: 0.8rem 1rem;
         }
       }
     }
