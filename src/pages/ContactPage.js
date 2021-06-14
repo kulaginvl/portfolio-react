@@ -59,14 +59,14 @@ const ContactPage = () => {
             <ContactItem
               icon={mailico}
               title={'Mail'}
-              contact1={'+1123456789'}
-              contact2={'2-123-456-78-91'}
+              contact1={'+1123456789@mail.ru'}
+              contact2={'2-123-456-78-91@mail.ru'}
             />
             <ContactItem
               icon={locationico}
               title={'Location'}
-              contact1={'+1123456789'}
-              contact2={'2-123-456-78-91'}
+              contact1={'1 Pushkin Streat, Volgograd, Russia'}
+              contact2={'Russia'}
             />
           </div>
         </InnerLayout>
@@ -79,6 +79,11 @@ const ContactPageStyled = styled.section`
   .contact-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    .right-content {
+      display: flex;
+      flex-direction: column;
+    }
     .contact-title {
       h4 {
         color: var(--white-color);
