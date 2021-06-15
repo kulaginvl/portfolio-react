@@ -1,9 +1,10 @@
 import React from 'react';
+import Skills from '../components/Resume/Skills';
 
 const ResumePage = () => {
   return (
     <div>
-      <h1>ResumePage ResumePage</h1>
+      <Skills />
     </div>
   );
 };
