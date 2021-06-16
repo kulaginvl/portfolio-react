@@ -52,6 +52,11 @@ const GlobalStyle = createGlobalStyle`
         color: var(--primary-color)
     }
 }
+h5{
+    color: var(--white-color);
+    font-size: 1.2rem;
+    padding-bottom: .6rem;
+}
 `;
 
 export default GlobalStyle;

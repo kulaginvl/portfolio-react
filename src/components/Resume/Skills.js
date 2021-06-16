@@ -12,6 +12,9 @@ const Skills = () => {
         <InnerLayout>
           <div className="skills">
             <Progres title={'HTML'} width={'70%'} text={'70%'} />
+            <Progres title={'HTML'} width={'70%'} text={'70%'} />
+            <Progres title={'HTML'} width={'70%'} text={'70%'} />
+            <Progres title={'HTML'} width={'70%'} text={'70%'} />
           </div>
         </InnerLayout>
       </MainLayout>
