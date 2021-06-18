@@ -1,18 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
 import TitleBlock from '../TitleBlock';
+import WorkIcon from '@material-ui/icons/Work';
+import CastForEducationIcon from '@material-ui/icons/CastForEducation';
 
-import { MainLayout, InnerLayout } from '../../styles/Layouts';
+import SmallTitleStyled from '../SmallTitle';
+import ResumeItem from './ResumeItem';
+
+import { InnerLayout } from '../../styles/Layouts';
 
 const Resume = () => {
+  const briface = <WorkIcon />;
+  const educational = <CastForEducationIcon />;
   return (
-    <MainLayout>
-      <ResumeStyled>
-        <TitleBlock title="Resume" span="Resume" />
+    <ResumeStyled>
+      <TitleBlock title="Resume" span="Resume" />
 
-        <InnerLayout></InnerLayout>
-      </ResumeStyled>
-    </MainLayout>
+      <InnerLayout>
+        <SmallTitleStyled icon={briface} title={'Working Experince'} />
+        <div className="content-resume">
+          <ResumeItem />
+        </div>
+      </InnerLayout>
+    </ResumeStyled>
   );
 };
 

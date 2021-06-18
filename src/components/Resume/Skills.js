@@ -7,18 +7,16 @@ import Progres from './Progres';
 const Skills = () => {
   return (
     <SkilsStyled>
-      <MainLayout>
-        <TitleBlock title="Skills" span="Skills" />
-        <InnerLayout>
-          <div className="skills">
-            <Progres title={'HTML'} width={'70%'} text={'70%'} />
-            <Progres title={'CSS'} width={'80%'} text={'80%'} />
-            <Progres title={'JS'} width={'65%'} text={'65%'} />
-            <Progres title={'REACT JS'} width={'85%'} text={'85%'} />
-            <Progres title={'TS'} width={'35%'} text={'35%'} />
-          </div>
-        </InnerLayout>
-      </MainLayout>
+      <TitleBlock title="Skills" span="Skills" />
+      <InnerLayout>
+        <div className="skills">
+          <Progres title={'HTML'} width={'70%'} text={'70%'} />
+          <Progres title={'CSS'} width={'80%'} text={'80%'} />
+          <Progres title={'JS'} width={'65%'} text={'65%'} />
+          <Progres title={'REACT JS'} width={'85%'} text={'85%'} />
+          <Progres title={'TS'} width={'35%'} text={'35%'} />
+        </div>
+      </InnerLayout>
     </SkilsStyled>
   );
 };
