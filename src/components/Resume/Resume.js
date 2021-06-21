@@ -17,15 +17,30 @@ const Resume = () => {
       <TitleBlock title="Resume" span="Resume" />
 
       <InnerLayout>
-        <SmallTitleStyled icon={briface} title={'Working Experince'} />
+        <div className="small-title">
+          <SmallTitleStyled icon={briface} title={'Working Experince'} />
+        </div>
         <div className="content-resume">
-          <ResumeItem />
+          <ResumeItem
+            year={'2019 - 2021'}
+            title={'Frontend Devoloper'}
+            subTitle={'KNITY'}
+            text={
+              'Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident. Est pariatur consequat adipisicing ea commodo nulla aliqua adipisicing ea.Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident.'
+            }
+          />
         </div>
       </InnerLayout>
     </ResumeStyled>
   );
 };
-
-const ResumeStyled = styled.section``;
+const ResumeStyled = styled.section`
+  .small-title {
+    padding-bottom: 2.8rem;
+  }
+  .content-resume {
+    border-left: 2px solid var(--border-color);
+  }
+`;
 
 export default Resume;
