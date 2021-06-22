@@ -8,6 +8,7 @@ import SmallTitleStyled from '../SmallTitle';
 import ResumeItem from './ResumeItem';
 
 import { InnerLayout } from '../../styles/Layouts';
+import SmallTitle from '../SmallTitle';
 
 const Resume = () => {
   const briface = <WorkIcon />;
@@ -17,10 +18,57 @@ const Resume = () => {
       <TitleBlock title="Resume" span="Resume" />
 
       <InnerLayout>
-        <div className="small-title">
+        <div className="small-title ">
           <SmallTitleStyled icon={briface} title={'Working Experince'} />
         </div>
         <div className="content-resume">
+          <ResumeItem
+            year={'2019 - 2021'}
+            title={'Frontend Devoloper'}
+            subTitle={'KNITY'}
+            text={
+              'Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident. Est pariatur consequat adipisicing ea commodo nulla aliqua adipisicing ea.Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident.'
+            }
+          />
+          <ResumeItem
+            year={'2019 - 2021'}
+            title={'Frontend Devoloper'}
+            subTitle={'KNITY'}
+            text={
+              'Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident. Est pariatur consequat adipisicing ea commodo nulla aliqua adipisicing ea.Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident.'
+            }
+          />
+          <ResumeItem
+            year={'2019 - 2021'}
+            title={'Frontend Devoloper'}
+            subTitle={'KNITY'}
+            text={
+              'Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident. Est pariatur consequat adipisicing ea commodo nulla aliqua adipisicing ea.Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident.'
+            }
+          />
+        </div>
+        <div className="small-title u-small-title-margin">
+          <SmallTitle icon={educational} title={'Educational'} />
+        </div>
+        <div className="content-resume">
+          <ResumeItem
+            year={'2019 - 2021'}
+            title={'Frontend Devoloper'}
+            subTitle={'KNITY'}
+            text={
+              'Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident. Est pariatur consequat adipisicing ea commodo nulla aliqua adipisicing ea.Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident.'
+            }
+          />
+          <ResumeItem
+            year={'2019 - 2021'}
+            title={'Frontend Devoloper'}
+            subTitle={'KNITY'}
+            text={
+              'Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident. Est pariatur consequat adipisicing ea commodo nulla aliqua adipisicing ea.Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident.'
+            }
+          />
+        </div>
+        <div className="u-margin-bottom">
           <ResumeItem
             year={'2019 - 2021'}
             title={'Frontend Devoloper'}
@@ -37,6 +85,9 @@ const Resume = () => {
 const ResumeStyled = styled.section`
   .small-title {
     padding-bottom: 2.8rem;
+  }
+  .u-small-title-margin {
+    margin-top: 4rem;
   }
   .content-resume {
     border-left: 2px solid var(--border-color);
