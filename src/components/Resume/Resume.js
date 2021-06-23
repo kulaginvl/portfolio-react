@@ -21,7 +21,7 @@ const Resume = () => {
         <div className="small-title ">
           <SmallTitleStyled icon={briface} title={'Working Experince'} />
         </div>
-        <div className="content-resume">
+        <div className="content-resume ">
           <ResumeItem
             year={'2019 - 2021'}
             title={'Frontend Devoloper'}
@@ -50,7 +50,7 @@ const Resume = () => {
         <div className="small-title u-small-title-margin">
           <SmallTitle icon={educational} title={'Educational'} />
         </div>
-        <div className="content-resume">
+        <div className="content-resume u-small-title-margin">
           <ResumeItem
             year={'2019 - 2021'}
             title={'Frontend Devoloper'}
@@ -67,8 +67,6 @@ const Resume = () => {
               'Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident. Est pariatur consequat adipisicing ea commodo nulla aliqua adipisicing ea.Quis velit ut laborum tempor et esse incididunt velit nulla tempor proident.'
             }
           />
-        </div>
-        <div className="u-margin-bottom">
           <ResumeItem
             year={'2019 - 2021'}
             title={'Frontend Devoloper'}
