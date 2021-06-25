@@ -54,6 +54,23 @@ const MenuBlockStyled = styled.div`
       ul {
         display: none;
       }
+      .portfolio-img {
+      }
+      .portfolio-img:hover {
+        &::before {
+          content: '';
+          position: absolute;
+          left: 2%;
+          top: 4%;
+          height: calc(100% - 30%);
+          width: calc(100% - 4%);
+          background-color: white;
+          opacity: 0.9;
+          transform-origin: 0;
+          transform: scale(1);
+          transition: all 0.4s ease-in-out;
+        }
+      }
     }
   }
 `;
