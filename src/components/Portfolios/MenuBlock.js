@@ -55,19 +55,42 @@ const MenuBlockStyled = styled.div`
         display: none;
       }
       .portfolio-img {
+        content: '';
+        position: absolute;
+        left: 2%;
+        top: 4%;
+        height: 0;
+        width: 0;
       }
       .portfolio-img:hover {
-        &::before {
-          content: '';
+        ul {
+          display: block;
           position: absolute;
-          left: 2%;
-          top: 4%;
+          left: 50%;
+          top: 30%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          li {
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            border-radius: 50%;
+            margin: 0 0.4rem;
+          }
+          svg {
+            font-size: 2rem;
+          }
+        }
+        &::before {
           height: calc(100% - 30%);
           width: calc(100% - 4%);
-          background-color: white;
+          background-color: var(--white-color);
           opacity: 0.9;
-          transform-origin: 0;
-          transform: scale(1);
+          transform-origin: left;
           transition: all 0.4s ease-in-out;
         }
       }
